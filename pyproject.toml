@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "crowdwisdomtrading"
-version = "0.2.3"
+version = "0.2.4"
 description = "Crowd sentiment from thousands of pro traders for stocks, crypto, futures and FX: free daily and weekly ProCrowdSentimentScore, plus predictions and CrowdMap levels, pay per call."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -32,6 +32,8 @@ Homepage = "https://crowdwisdomtrading.com/x402?utm_source=pypi&utm_medium=packa
 Catalog = "https://api.crowdwisdomtrading.com/x402/catalog"
 Docs = "https://api.crowdwisdomtrading.com/docs"
 Terms = "https://www.crowdwisdomtrading.com/api-terms"
+Repository = "https://github.com/CrowdWisdomTradingx402/crowdwisdomtrading-python"
+Issues = "https://github.com/CrowdWisdomTradingx402/crowdwisdomtrading-python/issues"
 
 [project.scripts]
 crowdwisdomtrading = "crowdwisdomtrading.cli:main"
