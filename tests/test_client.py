@@ -161,7 +161,7 @@ def test_weekly_free_cap_reached_is_a_clear_error(tmp_path, monkeypatch):
 
 
 def test_package_is_named_crowdwisdomtrading():
-    import tomllib
+    tomllib = pytest.importorskip("tomllib")  # stdlib from Python 3.11
 
     meta = tomllib.loads((PKG / "pyproject.toml").read_text(encoding="utf-8"))["project"]
     assert meta["name"] == "crowdwisdomtrading"
