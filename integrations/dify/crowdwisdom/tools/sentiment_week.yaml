@@ -1,0 +1,22 @@
+identity:
+  author: crowdwisdomtrading
+  name: get_crowd_sentiment_week
+  label:
+    en_US: Pro crowd sentiment this week
+description:
+  human:
+    en_US: This week's pro-trader crowd sentiment score (-100 all short to +100 all long) and the number of pro traders for one ticker.
+  llm: Get this week's pro-trader crowd sentiment for one ticker (US stock, ETF, crypto such as BTC-USD, futures such as GC=F, or FX). Returns ProCrowdSentimentScore from -100 (everyone short) to +100 (everyone long), ProTraders (count of distinct pro traders) and the date. Aggregated crowd opinion for research, not investment advice.
+parameters:
+  - name: ticker
+    type: string
+    required: true
+    form: llm
+    label:
+      en_US: Ticker
+    human_description:
+      en_US: A ticker symbol such as AAPL, SPY, BTC-USD, GC=F or EURUSD=X.
+    llm_description: Ticker symbol without an exchange prefix, for example AAPL, SPY, BTC-USD, GC=F or EURUSD=X.
+extra:
+  python:
+    source: tools/sentiment_week.py

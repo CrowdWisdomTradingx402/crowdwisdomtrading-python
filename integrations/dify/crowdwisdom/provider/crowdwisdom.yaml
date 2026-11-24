@@ -1,0 +1,16 @@
+identity:
+  author: crowdwisdomtrading
+  name: crowdwisdom
+  label:
+    en_US: CrowdWisdom Pro Crowd Sentiment
+  description:
+    en_US: Pro-trader crowd sentiment score and trader count for one ticker, today or this week.
+  icon: icon.png
+  tags:
+    - finance
+tools:
+  - tools/sentiment_today.yaml
+  - tools/sentiment_week.yaml
+extra:
+  python:
+    source: provider/crowdwisdom.py
