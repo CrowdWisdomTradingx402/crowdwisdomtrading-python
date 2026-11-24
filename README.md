@@ -5,6 +5,7 @@
 [![tests](https://github.com/CrowdWisdomTradingx402/crowdwisdomtrading-python/actions/workflows/tests.yml/badge.svg)](https://github.com/CrowdWisdomTradingx402/crowdwisdomtrading-python/actions/workflows/tests.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 [![CrowdWisdom Trading MCP connector](https://glama.ai/mcp/connectors/com.crowdwisdomtrading.api/crowd-wisdom-trading/badges/score.svg)](https://glama.ai/mcp/connectors/com.crowdwisdomtrading.api/crowd-wisdom-trading)
+[![mcptry](https://mcptry.com/badge/com.crowdwisdomtrading.api/crowd-wisdom-trading)](https://mcptry.com/servers/com.crowdwisdomtrading.api/crowd-wisdom-trading)
 
 **What thousands of pro traders think about any ticker, in one number.**
 
