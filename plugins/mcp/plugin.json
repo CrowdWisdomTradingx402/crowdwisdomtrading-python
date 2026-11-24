@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "crowdwisdom-mcp",
+  "version": "1.0.0",
+  "description": "Connects the agent to CrowdWisdom Trading's hosted MCP server: today's and this week's crowd sentiment score (-100 to +100) and pro trader count for US stocks, ETFs, crypto, futures and FX.",
+  "author": {
+    "name": "CrowdWisdom Trading",
+    "url": "https://www.crowdwisdomtrading.com"
+  },
+  "homepage": "https://www.crowdwisdomtrading.com/x402",
+  "repository": "https://github.com/CrowdWisdomTradingx402/crowdwisdomtrading-python",
+  "license": "MIT",
+  "keywords": ["sentiment", "stocks", "trading", "market-data", "mcp"],
+  "extensions": {
+    "com.nousresearch.hermes": {
+      "servers": {
+        "crowdwisdomtrading": { "trust": "untrusted" }
+      }
+    }
+  }
+}
