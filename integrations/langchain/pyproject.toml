@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "langchain-crowdwisdom"
+version = "0.1.0"
+description = "LangChain tools for CrowdWisdom Trading: free daily and weekly crowd sentiment (ProCrowdSentimentScore) for stocks, ETFs, crypto, futures and FX."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "CrowdWisdom Trading"}]
+keywords = ["langchain", "crowd sentiment", "trading", "stocks", "crypto", "forex", "futures", "ai agents", "tools"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Office/Business :: Financial :: Investment",
+    "Intended Audience :: Developers",
+    "Development Status :: 4 - Beta",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "langchain-core>=0.3.15,<2.0",
+    "crowdwisdomtrading>=0.2.4",
+    "pydantic>=2.7",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8", "pytest-asyncio>=0.23", "pytest-socket>=0.7", "langchain-tests>=0.3.5"]
+
+[project.urls]
+Homepage = "https://www.crowdwisdomtrading.com/x402"
+Documentation = "https://github.com/CrowdWisdomTradingx402/crowdwisdomtrading-python/tree/main/integrations/langchain#readme"
+Repository = "https://github.com/CrowdWisdomTradingx402/crowdwisdomtrading-python/tree/main/integrations/langchain"
+Issues = "https://github.com/CrowdWisdomTradingx402/crowdwisdomtrading-python/issues"
+Terms = "https://www.crowdwisdomtrading.com/api-terms"
+
+[tool.setuptools]
+packages = ["langchain_crowdwisdom"]
+
+[tool.setuptools.package-data]
+langchain_crowdwisdom = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests/unit_tests"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+markers = [
+    "integration: live calls to the free CrowdWisdom Trading API (run: pytest tests/integration_tests)",
+]
